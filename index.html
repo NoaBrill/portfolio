@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for Noa Brill, a B.Sc. Electrical Engineering student at the Technion with a focus on FPGA design, digital systems, and hardware verification."
+    />
+    <title>Noa Brill | Electrical Engineering Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-light">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Go to the top of the page">
+          <span class="brand-mark">EE</span>
+          <span class="brand-text">Noa Brill</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle__label">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section container" id="about">
+        <div class="hero__content">
+          <p class="eyebrow">Electrical Engineering Student</p>
+          <h1>Noa Brill</h1>
+          <p class="subtitle">B.Sc. Electrical Engineering Student at Technion</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="assets/cv.pdf" download>
+              Download CV
+            </a>
+          </div>
+
+          <div class="social-links" aria-label="Social links">
+            <a
+              href="https://github.com/NoaBrill"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="Visit GitHub profile"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/noa-brill-050b6133a"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="Visit LinkedIn profile"
+            >
+              LinkedIn
+            </a>
+            <a href="mailto:brillnoa@gmail.com" class="social-link" aria-label="Email me">
+              Email
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-label="Profile image section">
+          <div class="profile-frame">
+            <img src="assets/profile.jpg" alt="Profile" class="profile-img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical strengths and engineering tools</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Programming &amp; HDL</h3>
+            <ul class="skill-list">
+              <li>C</li>
+              <li>SystemVerilog</li>
+              <li>Assembly (RISC-V)</li>
+              <li>MATLAB</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Systems, Tools &amp; EDA</h3>
+            <ul class="skill-list">
+              <li>ModelSim</li>
+              <li>Quartus Prime</li>
+              <li>SignalTap Logic Analyzer</li>
+              <li>PlatformIO</li>
+              <li>Visual Studio</li>
+              <li>Git</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Core Domains</h3>
+            <ul class="skill-list">
+              <li>Computer Architecture</li>
+              <li>Digital Systems &amp; Logic Design</li>
+              <li>Parallel Hardware Design</li>
+              <li>Data Structures &amp; Algorithms</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Featured project</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-visual project-visual--one" aria-hidden="true">
+                <svg class="fpga-illustration" viewBox="0 0 900 500" role="img" aria-label="Illustration of a female engineer working at a desk with an FPGA development board">
+                  <defs>
+                    <linearGradient id="screenGlow" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#8be9fd" stop-opacity="0.9" />
+                      <stop offset="100%" stop-color="#6ee7b7" stop-opacity="0.7" />
+                    </linearGradient>
+                    <linearGradient id="boardGlow" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.95" />
+                      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.7" />
+                    </linearGradient>
+                    <filter id="softGlow">
+                      <feGaussianBlur stdDeviation="8" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+
+                  <rect x="0" y="0" width="900" height="500" fill="#0f172a" opacity="0.08" />
+                  <rect x="0" y="420" width="900" height="80" fill="#1e293b" opacity="0.25" />
+
+                  <g class="monitor">
+                    <rect x="480" y="110" width="260" height="150" rx="18" fill="#0f172a" stroke="#3b82f6" stroke-width="4" />
+                    <rect x="510" y="135" width="200" height="96" rx="8" fill="#0b1120" />
+                    <rect x="520" y="145" width="180" height="72" rx="6" fill="url(#screenGlow)" opacity="0.9" filter="url(#softGlow)" />
+                    <path class="trace trace-a" d="M 525 185 C 585 180, 605 160, 635 150 S 708 165, 710 180" fill="none" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round" />
+                    <path class="trace trace-b" d="M 528 170 C 570 145, 628 142, 675 156 S 710 180, 720 170" fill="none" stroke="#a5f3fc" stroke-width="3" stroke-linecap="round" />
+                    <rect x="580" y="260" width="90" height="16" rx="8" fill="#1f2937" />
+                    <rect x="520" y="270" width="220" height="14" rx="7" fill="#334155" />
+                  </g>
+
+                  <g class="engineer">
+                    <circle cx="260" cy="145" r="34" fill="#f7c7a8" />
+                    <path d="M232 150 Q260 120 288 150 L292 180 Q260 200 228 180 Z" fill="#2f3d59" />
+                    <path d="M200 220 Q260 185 320 220 L340 345 L180 345 Z" fill="#4f46e5" opacity="0.92" />
+                    <path d="M225 230 L175 290" stroke="#f7c7a8" stroke-width="16" stroke-linecap="round" />
+                    <path d="M294 230 L348 292" stroke="#f7c7a8" stroke-width="16" stroke-linecap="round" />
+                    <path d="M195 345 L160 398" stroke="#f7c7a8" stroke-width="18" stroke-linecap="round" />
+                    <path d="M310 345 L350 398" stroke="#f7c7a8" stroke-width="18" stroke-linecap="round" />
+                    <path d="M195 398 L150 420" stroke="#374151" stroke-width="18" stroke-linecap="round" />
+                    <path d="M310 398 L360 420" stroke="#374151" stroke-width="18" stroke-linecap="round" />
+                    <circle cx="240" cy="155" r="6" fill="#0f172a" />
+                    <circle cx="280" cy="155" r="6" fill="#0f172a" />
+                    <path d="M248 170 Q260 182 272 170" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" />
+                    <path d="M220 208 Q260 225 300 208" fill="none" stroke="#f8d0a4" stroke-width="4" stroke-linecap="round" opacity="0.9" />
+                  </g>
+
+                  <g class="fpga-board">
+                    <rect x="150" y="305" width="210" height="115" rx="14" fill="#111827" stroke="#5eead4" stroke-width="4" />
+                    <rect x="165" y="320" width="180" height="85" rx="8" fill="url(#boardGlow)" opacity="0.82" />
+                    <g class="leds">
+                      <circle cx="180" cy="335" r="6" fill="#7dd3fc" />
+                      <circle cx="205" cy="335" r="6" fill="#7dd3fc" />
+                      <circle cx="230" cy="335" r="6" fill="#7dd3fc" />
+                      <circle cx="255" cy="335" r="6" fill="#7dd3fc" />
+                      <circle cx="280" cy="335" r="6" fill="#7dd3fc" />
+                      <circle cx="305" cy="335" r="6" fill="#7dd3fc" />
+                    </g>
+                    <g class="clock-pulse">
+                      <path d="M 165 385 L 230 385 L 255 365 L 330 365" fill="none" stroke="#ecfeff" stroke-width="4" stroke-linecap="round" />
+                      <circle cx="330" cy="365" r="4" fill="#facc15" />
+                    </g>
+                    <path d="M 160 378 H 345" stroke="#94a3b8" stroke-width="3" opacity="0.7" />
+                  </g>
+
+                  <g class="desk-items">
+                    <rect x="80" y="420" width="760" height="20" rx="10" fill="#475569" opacity="0.8" />
+                    <rect x="95" y="400" width="90" height="20" rx="10" fill="#94a3b8" opacity="0.8" />
+                    <rect x="650" y="380" width="90" height="12" rx="6" fill="#cbd5e1" opacity="0.7" />
+                  </g>
+                </svg>
+              </div>
+
+              <div class="project-body">
+                <div class="project-tags">
+                  <span>Intel DE10-Lite</span>
+                  <span>SystemVerilog</span>
+                  <span>Quartus Prime</span>
+                  <span>SignalTap</span>
+                  <span>PlatformIO</span>
+                  <span>ModelSim</span>
+                </div>
+
+                <h3>Real-Time Interactive Game on Intel DE10-Lite FPGA</h3>
+
+                <ul class="project-points">
+                  <li>
+                    Designed, verified, and implemented hardware concurrency,
+                    multi-state synchronization (FSMs), memory-mapped architecture,
+                    and custom VGA display controllers.
+                  </li>
+                  <li>
+                    Debugged hardware timing, synchronization, and race conditions
+                    using SignalTap Logic Analyzer to ensure cycle-accurate execution
+                    and zero-latency performance.
+                  </li>
+                </ul>
+
+                <div class="project-overview">
+                  <h4>Project Overview</h4>
+                  <p>
+                    A real-time FPGA-based interactive game built around digital timing,
+                    control-state sequencing, and high-speed display logic. The project
+                    emphasized robust verification and performance tuning to maintain
+                    smooth real-time behavior under hardware constraints.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Academic, technical, and leadership highlights</h2>
+        </div>
+
+        <div class="timeline" aria-label="Career and experience timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">HACKATHONS</span>
+              <h3>Hackathons &amp; Hardware Challenges</h3>
+              <p>
+                Participated in hardware-focused competitions and embedded challenges,
+                developing solutions under time constraints and validating system-level
+                performance through rapid prototyping.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">MENTORSHIP</span>
+              <h3>Academic Mentorship</h3>
+              <p>
+                Mentor for first-semester engineering students through their academic
+                and technical transition at the Technion.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">LABORATORIES</span>
+              <h3>Advanced Academic Laboratories</h3>
+              <p>
+                Electrical Engineering laboratory coursework emphasizing digital
+                systems, hardware verification, and parallel hardware design.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-wrap">
+        <p>© 2026 Noa Brill. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="https://github.com/NoaBrill" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/noa-brill-050b6133a" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="mailto:brillnoa@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
